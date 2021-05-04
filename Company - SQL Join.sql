@@ -7,8 +7,8 @@ NATURAL JOIN Countries;
 --First and last name of all employees as well as the ID and name of their departments.
 --NOTE: Use Inner Join Using(attribute/s)
 SELECT Employee_ID, First_Name, Last_Name, Department_Name
-FROM Employees E
-INNER JOIN Departments D ON E.Department_ID = D.Department_ID;
+FROM Employees
+INNER JOIN Departments USING(Department_ID);
 
 --First and last name of employees, as well as their job ID, department ID and name, who are working in Southlake City.
 --NOTE: Use Inner Join On Condition
