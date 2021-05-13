@@ -12,7 +12,7 @@ FROM Employees E, Jobs J
 WHERE E.Job_ID = J.Job_ID and Job_Title = 'Programmer';
 
 --Get the average salary and number of employees working the department 100.
-SELECT avg(Salary) as avgSalary, count(*) as count
+SELECT AVG(Salary) as avgSalary, count(*) as count
 FROM Employees 
 WHERE Department_ID = 100;
 
